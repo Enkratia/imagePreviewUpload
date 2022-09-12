@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/15801db546.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Preview Upload</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="image">
+        <img src="" alt="">
+      </div>
+
+      <div class="content">
+        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <div class="text">No file chosen, yet!</div>
+      </div>
+
+      <div id="cancel-btn"><i class="fas fa-times"></i></div>
+      <div class="file-name">File name here</div>
+    </div>
+
+    <input id="default-btn" type="file" hidden>
+    <button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

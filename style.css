@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.container{
+  height: 350px;
+  width: 430px;
+}
+.container .wrapper{
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.container .wrapper.active{
+  border: none;
+}
+.wrapper .image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: none;
+}
+.wrapper.active .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.content .icon{
+  font-size: 100px;
+  color: #9658fe;
+}
+.content .text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #5b5b7b;
+}
+.wrapper #cancel-btn{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #9658fe;
+  display: none;
+}
+.wrapper.active:hover #cancel-btn{
+  display: block;
+}
+.wrapper.active:hover #cancel-btn:hover{
+  color: #e74c3c;
+}
+.wrapper .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: #fff;
+  padding: 8px 0;
+  font-size: 18px;
+  background: linear-gradient(135deg, #3a8ffe 0%, #9658fe 100%);
+  display: none;
+}
+.wrapper.active:hover .file-name{
+  display: block;
+}
+.container #custom-btn{
+  margin-top: 30px;
+  height: 50px;
+  width: 100%;
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(135deg, #3a8ffe 0%, #9658fe 100%);
+}
+
